@@ -1,8 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ceec.org.in/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://ceec.org.in/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://ceec.org.in/#about</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ceec.org.in/#services</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ceec.org.in/#products</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ceec.org.in/#faq</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceec.org.in/#contact</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ceec.org.in/#truetrack</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceec.org.in/#blogspeed</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceec.org.in/#skillpact</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceec.org.in/#tabzy</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceec.org.in/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://ceec.org.in/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
