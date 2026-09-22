@@ -2,365 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="google-site-verification" content="DA-oEXZ-qx5HAFx9kSyiYWrMQs3-6za1nAM1NpRLbds" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CEEC Global Ventures — Technology Services &amp; Products</title>
 <meta name="description" content="CEEC Global Ventures is a technology services company building TrueTrack, BlogSpeed, SkillPact and Tabzy for clients around the world.">
-<style>
-  :root{
-    --navy: #060f2e;
-    --navy-2: #0c1a4a;
-    --royal-deep: #101f66;
-    --royal: #1b2f80;
-    --royal-bright: #3f5fd6;
-    --royal-lift: #6c86e6;
-    --bg-soft: #eef2fb;
-    --bg-soft-2: #e2e8fa;
-    --border: #dbe2f5;
-    --border-strong: #c2cdef;
-    --text: #0f1a3d;
-    --muted: #5a6b90;
-    --on-navy: #eef1fb;
-    --on-navy-muted: #aab6e4;
-    --on-navy-border: rgba(255,255,255,0.16);
-    --white: #ffffff;
-    --radius: 10px;
-    --maxw: 1180px;
-    --shadow: 0 16px 40px rgba(6,15,46,0.14);
+<link rel="canonical" href="https://ceec.org.in/" />
+<meta name="keywords" content="CEEC Global Ventures, technology services, software engineering, cloud infrastructure, technology consulting, TrueTrack, BlogSpeed, SkillPact, Tabzy, managed support, IT consulting">
+<meta property="og:title" content="CEEC Global Ventures — Technology Services &amp; Products">
+<meta property="og:description" content="CEEC Global Ventures is a technology services company building TrueTrack, BlogSpeed, SkillPact and Tabzy for clients around the world.">
+<meta property="og:url" content="https://ceec.org.in/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CEEC Global Ventures">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CEEC Global Ventures">
+<meta name="twitter:description" content="Technology services company building products for clients worldwide.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CEEC Global Ventures",
+  "url": "https://ceec.org.in/",
+  "logo": "https://ceec.org.in/assets/images/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-78996-16501",
+    "contactType": "customer service",
+    "email": "kaushal.g@ceec.org.in"
   }
-
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    color:var(--text);
-    background:var(--white);
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  img,svg{display:block;max-width:100%;}
-  a{color:inherit;text-decoration:none;}
-  button{font-family:inherit;}
-  .container{width:100%;max-width:calc(var(--maxw) + 40px);margin:0 auto;padding:0 24px;}
-  section{padding:100px 0;}
-  h1,h2,h3,h4{margin:0 0 14px 0;font-weight:700;line-height:1.25;}
-  p{margin:0 0 16px 0;color:var(--muted);}
-  .eyebrow{
-    color:var(--royal-bright);
-    font-weight:bold;
-    font-size:13px;
-    margin-bottom:10px;
-    display:inline-block;
-  }
-  .on-navy .eyebrow{color:#8fa4ec;}
-  .section-head{max-width:640px;margin-bottom:52px;}
-  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
-  .on-navy{color:var(--on-navy);}
-  .on-navy h1,.on-navy h2,.on-navy h3,.on-navy h4{color:#fff;}
-  .on-navy p{color:var(--on-navy-muted);}
-
-  /* ---------- Buttons ---------- */
-  .btn{
-    display:inline-flex;align-items:center;gap:8px;
-    padding:14px 28px;border-radius:6px;font-size:15px;font-weight:bold;
-    border:2px solid transparent;cursor:pointer;
-    transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease, border-color .15s ease;
-  }
-  .btn-primary{background:var(--royal);color:#fff;}
-  .btn-primary:hover{background:var(--royal-deep);transform:translateY(-2px);box-shadow:0 12px 26px rgba(27,47,128,0.35);}
-  .btn-outline{background:transparent;color:var(--royal);border-color:var(--royal);}
-  .btn-outline:hover{background:var(--royal);color:#fff;transform:translateY(-2px);}
-  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,0.45);}
-  .btn-ghost:hover{background:rgba(255,255,255,0.14);border-color:#fff;transform:translateY(-2px);}
-  .btn-light{background:#fff;color:var(--royal-deep);}
-  .btn-light:hover{background:#dfe6fb;transform:translateY(-2px);}
-  .link-arrow{font-weight:bold;color:var(--royal-bright);display:inline-flex;align-items:center;gap:6px;}
-  .link-arrow:hover{text-decoration:underline;}
-
-  /* ---------- Nav ---------- */
-  header.site-nav{
-    position:fixed;top:0;left:0;right:0;z-index:1000;
-    background:transparent;
-    padding-top:0;
-    transition:padding .3s ease;
-  }
-  header.site-nav.scrolled{padding-top:14px;}
-  .nav-inner{
-    max-width:none;width:100%;margin:0;padding:0 24px;
-    display:flex;align-items:center;justify-content:space-between;height:76px;
-    background:#fff;
-    border-radius:0;
-    box-shadow:0 2px 14px rgba(6,15,46,0.07);
-    transition:box-shadow .3s ease, height .3s ease, max-width .3s ease, padding .3s ease, border-radius .3s ease;
-  }
-  header.site-nav.scrolled .nav-inner{
-    box-shadow:0 16px 34px rgba(6,15,46,0.16);
-    height:64px;
-    max-width:none;
-    padding:0 20px;
-    border-radius:999px;
-  }
-  .logo{display:flex;align-items:center;gap:12px;font-weight:bold;font-size:18px;color:var(--royal-deep);cursor:pointer;}
-  .logo img{height:52px;width:auto;display:block;}
-  .logo-mark{
-    width:46px;height:46px;border-radius:10px;
-    background:var(--royal-bright);
-    display:flex;align-items:center;justify-content:center;
-    color:#fff;font-weight:bold;font-size:18px;flex:none;
-  }
-  nav.primary-links{display:flex;align-items:center;gap:6px;}
-  nav.primary-links > a, nav.primary-links > .dropdown > button{
-    padding:10px 14px;font-size:15px;font-weight:bold;color:var(--text);
-    border:none;background:transparent;cursor:pointer;border-radius:6px;
-    transition:color .2s ease, background .2s ease;
-  }
-  nav.primary-links > a:hover, nav.primary-links > .dropdown > button:hover{color:var(--royal);background:var(--bg-soft);}
-  .dropdown{position:relative;}
-  .dropdown > button{display:flex;align-items:center;gap:6px;}
-  .caret{width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px;transition:transform .15s ease;}
-  .dropdown.open .caret{transform:rotate(-135deg);margin-top:3px;}
-  .dropdown-menu{
-    position:absolute;top:calc(100% + 10px);left:0;
-    background:#fff;border:1px solid var(--border);
-    border-radius:10px;box-shadow:var(--shadow);
-    min-width:230px;padding:8px;
-    opacity:0;visibility:hidden;transform:translateY(-6px);
-    transition:opacity .15s ease, transform .15s ease, visibility .15s ease;
-  }
-  .dropdown.open .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);}
-  .dropdown-menu a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:6px;color:var(--text);}
-  .dropdown-menu a:hover{background:var(--bg-soft);}
-  .dropdown-menu a img{width:26px;height:26px;object-fit:contain;flex:none;}
-  .dropdown-menu a .dd-text{display:flex;flex-direction:column;gap:2px;}
-  .dropdown-menu a strong{font-size:14px;}
-  .dropdown-menu a span{font-size:12.5px;color:var(--muted);font-weight:normal;}
-  .nav-cta{display:flex;align-items:center;gap:14px;}
-  .nav-cta .btn{padding:10px 20px;font-size:14px;}
-  .menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
-  .menu-toggle span{width:24px;height:2px;background:var(--royal-deep);border-radius:2px;}
-  header.site-nav.scrolled .menu-toggle span{background:var(--royal-deep);}
-
-  /* ---------- Page fade ---------- */
-  .page{display:none;}
-  .page.active{display:block;animation:pageIn .45s ease both;}
-  @keyframes pageIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
-
-  /* ---------- Image placeholders ---------- */
-  .img-placeholder{
-    border-radius:14px;
-    overflow:hidden;
-    border:1px solid var(--border-strong);
-    background:var(--bg-soft-2);
-    line-height:0;
-  }
-  .img-placeholder img{display:block;width:100%;height:auto;}
-  .on-navy .img-placeholder{
-    border-color:rgba(255,255,255,0.22);
-    background:rgba(255,255,255,0.05);
-  }
-
-  .logo-placeholder{
-    width:100%;height:240px;border-radius:20px;display:flex;align-items:center;justify-content:center;overflow:hidden;
-  }
-  .logo-placeholder img{padding:26px;object-fit:contain;width:100%;height:100%;}
-
-  /* ---------- Hero ---------- */
-  .hero{
-    padding:170px 0 100px 0;
-    background:var(--navy);
-    position:relative;overflow:hidden;
-  }
-  .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:48px;align-items:center;position:relative;z-index:1;}
-  .hero h1{font-size:46px;letter-spacing:-0.01em;color:#fff;}
-  .hero .lead{font-size:18px;max-width:480px;color:var(--on-navy-muted);}
-  .hero-ctas{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;}
-  .hero-visual{position:relative;}
-  .hero-visual-inner{position:relative;animation:floatY 6s ease-in-out infinite;}
-
-  /* ---------- Stats ---------- */
-  .stats{background:var(--royal-deep);}
-  .stats .container{padding:44px 28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-  .stat{text-align:center;}
-  .stat .num{font-size:36px;font-weight:bold;color:#fff;}
-  .stat .label{font-size:14px;color:var(--on-navy-muted);margin-top:4px;}
-
-  /* ---------- About ---------- */
-  .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;}
-  .value-list{display:grid;gap:22px;margin-top:8px;}
-  .value-item{display:flex;gap:14px;align-items:flex-start;}
-  .icon-box{
-    flex:none;width:42px;height:42px;border-radius:8px;
-    background:var(--bg-soft);color:var(--royal);
-    display:flex;align-items:center;justify-content:center;
-  }
-  .icon-box svg{width:20px;height:20px;stroke:var(--royal);}
-  .value-item h4{margin-bottom:4px;font-size:16px;}
-  .value-item p{margin:0;font-size:14.5px;}
-
-  /* ---------- Global presence ---------- */
-  .presence{background:var(--navy);}
-  .presence-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
-  .region-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
-  .region-tag{
-    font-size:13.5px;font-weight:bold;color:#dbe3fa;
-    border:1px solid var(--on-navy-border);border-radius:999px;padding:8px 16px;
-  }
-
-  /* ---------- Services (list, not cards) ---------- */
-  .bg-soft{background:var(--bg-soft);}
-  .service-list{display:flex;flex-direction:column;border-top:1px solid var(--border);}
-  .service-row{
-    display:grid;grid-template-columns:56px 230px 1fr;gap:28px;align-items:center;
-    padding:30px 0;border-bottom:1px solid var(--border);
-    transition:background .15s ease;
-  }
-  .service-row:hover{background:rgba(27,47,128,0.03);}
-  .service-row h3{font-size:17px;margin:0;}
-  .service-row p{font-size:14.5px;margin:0;}
-
-  /* ---------- Products: elaborate sections, not cards ---------- */
-  .product-section{padding:96px 0;}
-  .product-section.alt{background:var(--bg-soft);}
-  .product-visual-col{display:grid;gap:20px;align-items:stretch;}
-  .product-header-row{display:flex;align-items:center;gap:18px;margin-bottom:8px;}
-  .product-header-row h2{margin:0;}
-  .product-eyebrow-name{font-size:14px;font-weight:bold;color:var(--royal-bright);}
-  .check-list{list-style:none;margin:22px 0;padding:0;display:grid;gap:14px;}
-  .check-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;}
-  .check-list li svg{flex:none;width:20px;height:20px;stroke:var(--royal-bright);margin-top:2px;}
-  .check-list li strong{color:var(--text);}
-  .product-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:42px;align-items:center;}
-  .product-grid.reverse{grid-template-columns:1.05fr 0.95fr;}
-  .product-grid.reverse .product-visual-col{order:2;}
-  .product-cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;}
-
-  /* ---------- How we work ---------- */
-  .process-list{display:flex;flex-direction:column;}
-  .process-step{display:grid;grid-template-columns:64px 1fr;gap:24px;position:relative;padding-bottom:44px;}
-  .process-step:last-child{padding-bottom:0;}
-  .process-num{
-    width:44px;height:44px;border-radius:50%;background:var(--royal);color:#fff;
-    display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:15px;
-    position:relative;z-index:1;
-  }
-  .process-step:not(:last-child)::before{
-    content:'';position:absolute;left:22px;top:44px;bottom:0;width:2px;background:var(--border-strong);
-  }
-  .process-step h3{font-size:17px;margin-bottom:6px;}
-  .process-step p{margin:0;font-size:14.5px;max-width:520px;}
-
-  /* ---------- Contact (navy) ---------- */
-  .contact-section{background:var(--navy);}
-  .contact-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;}
-  .contact-info-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px;}
-  .contact-info-item .icon-box{background:rgba(255,255,255,0.08);}
-  .contact-info-item .icon-box svg{stroke:#cfd8f8;}
-  .contact-info-item h4{font-size:15px;margin-bottom:2px;color:#fff;}
-  .contact-info-item p{margin:0;font-size:15px;color:#dbe3fa;}
-  .contact-info-item p.muted{color:var(--on-navy-muted);font-size:13.5px;}
-
-  form.contact-form{display:grid;gap:16px;background:rgba(255,255,255,0.04);border:1px solid var(--on-navy-border);border-radius:14px;padding:32px;}
-  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  .field{display:flex;flex-direction:column;gap:6px;}
-  .field label{font-size:13.5px;font-weight:bold;color:#dbe3fa;}
-  .field input, .field textarea{
-    border:1px solid rgba(255,255,255,0.18);border-radius:6px;
-    padding:12px 14px;font-size:15px;font-family:inherit;color:var(--text);
-    background:#fff;transition:border-color .15s ease, box-shadow .15s ease;
-  }
-  .field input:focus, .field textarea:focus{outline:none;border-color:var(--royal-bright);box-shadow:0 0 0 3px rgba(63,95,214,0.28);}
-  .field textarea{resize:vertical;min-height:120px;}
-  .form-note{font-size:13px;color:var(--on-navy-muted);margin-top:-4px;}
-  #formStatus{font-size:14px;font-weight:bold;color:#8fa4ec;display:none;}
-
-  /* ---------- Footer ---------- */
-  footer{background:var(--navy);color:#cfd8f2;padding:56px 0 26px 0;border-top:1px solid rgba(255,255,255,0.08);}
-  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,0.12);}
-  footer h4{color:#fff;font-size:14px;margin-bottom:14px;}
-  footer .footer-desc{font-size:14px;color:#aebbe4;max-width:280px;}
-  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
-  footer ul a{font-size:14px;color:#cfd8f2;transition:color .15s ease;}
-  footer ul a:hover{color:#fff;}
-  .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:#8fa0d1;}
-
-  /* ---------- Product detail page template ---------- */
-  .product-hero{
-    padding:160px 0 80px 0;color:#fff;
-    background:var(--navy);
-    position:relative;overflow:hidden;
-  }
-  .product-hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;}
-  .breadcrumb{font-size:13.5px;color:#a9b8ea;margin-bottom:18px;}
-  .breadcrumb a:hover{text-decoration:underline;}
-  .product-hero h1{font-size:38px;color:#fff;}
-  .product-hero .tagline{font-size:19px;color:#cbd6f7;max-width:520px;}
-  .product-hero .btn-row{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap;}
-  .product-hero .hero-visual-inner{animation:floatY 6s ease-in-out infinite;}
-  .product-hero .hero-visual{position:relative;}
-
-  .feature-list{display:flex;flex-direction:column;border-top:1px solid var(--border);}
-  .feature-row{display:grid;grid-template-columns:56px 1fr;gap:22px;padding:26px 0;border-bottom:1px solid var(--border);}
-  .feature-row h3{font-size:17px;margin:0 0 4px 0;}
-  .feature-row p{margin:0;font-size:14.5px;}
-
-  .benefit-row{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}
-  .benefit-item{text-align:left;border-left:3px solid var(--royal-bright);padding-left:18px;}
-  .benefit-item h4{font-size:16px;margin-bottom:6px;}
-  .benefit-item p{margin:0;font-size:14.5px;}
-
-  .cta-banner{
-    background:var(--royal-deep);
-    color:#fff;border-radius:16px;padding:52px;
-    display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
-  }
-  .cta-banner h3{margin-bottom:6px;color:#fff;}
-  .cta-banner p{margin:0;color:#cbd6f7;}
-
-  /* ---------- Responsive ---------- */
-  @media (max-width:960px){
-    nav.primary-links, .nav-cta .btn-outline{display:none;}
-    .menu-toggle{display:flex;}
-    .hero-grid, .about-grid, .contact-grid, .presence-grid, .product-grid, .product-hero-grid{grid-template-columns:1fr;}
-    .product-grid.reverse .product-visual-col{order:0;}
-    .stats .container{grid-template-columns:repeat(2,1fr);}
-    .service-row{grid-template-columns:1fr;gap:8px;}
-    .feature-row{grid-template-columns:1fr;gap:10px;}
-    .benefit-row{grid-template-columns:1fr;gap:24px;}
-    .form-row{grid-template-columns:1fr;}
-    .footer-grid{grid-template-columns:1fr 1fr;}
-    section{padding:72px 0;}
-    .product-section{padding:64px 0;}
-    .hero{padding-top:150px;}
-  }
-  @media (max-width:960px){
-    body.nav-open nav.primary-links{
-      display:flex;flex-direction:column;align-items:stretch;
-      position:fixed;top:84px;left:16px;right:16px;background:#fff;
-      border:1px solid var(--border);border-radius:14px;padding:12px;gap:2px;
-      box-shadow:var(--shadow);
-    }
-    body.nav-open .dropdown-menu{position:static;box-shadow:none;border:none;opacity:1;visibility:visible;transform:none;display:none;background:transparent;}
-    body.nav-open .dropdown.open .dropdown-menu{display:grid;}
-  }
-  @media (max-width:600px){
-    .hero h1{font-size:32px;}
-    .product-hero h1{font-size:29px;}
-    .footer-grid{grid-template-columns:1fr;}
-    .cta-banner{padding:32px;}
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
-    html{scroll-behavior:auto;}
-  }
-</style>
+}
+</script>
+<style>:root{--navy:#060f2e;--navy-2:#0c1a4a;--royal-deep:#101f66;--royal:#1b2f80;--royal-bright:#3f5fd6;--royal-lift:#6c86e6;--bg-soft:#eef2fb;--bg-soft-2:#e2e8fa;--border:#dbe2f5;--border-strong:#c2cdef;--text:#0f1a3d;--muted:#5a6b90;--on-navy:#eef1fb;--on-navy-muted:#aab6e4;--on-navy-border:rgba(255,255,255,0.16);--white:#ffffff;--radius:10px;--maxw:1180px;--shadow:0 16px 40px rgba(6,15,46,0.14);}*{box-sizing:border-box;}html{scroll-behavior:smooth;}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;}img,svg{display:block;max-width:100%;}a{color:inherit;text-decoration:none;}button{font-family:inherit;}.container{width:100%;max-width:calc(var(--maxw) + 40px);margin:0 auto;padding:0 24px;}section{padding:100px 0;}h1,h2,h3,h4{margin:0 0 14px 0;font-weight:700;line-height:1.25;}p{margin:0 0 16px 0;color:var(--muted);}.eyebrow{color:var(--royal-bright);font-weight:bold;font-size:13px;margin-bottom:10px;display:inline-block;}.on-navy .eyebrow{color:#8fa4ec;}.section-head{max-width:640px;margin-bottom:52px;}.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}.on-navy{color:var(--on-navy);}.on-navy h1,.on-navy h2,.on-navy h3,.on-navy h4{color:#fff;}.on-navy p{color:var(--on-navy-muted);}.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:6px;font-size:15px;font-weight:bold;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .15s ease,color .15s ease,border-color .15s ease;}.btn-primary{background:var(--royal);color:#fff;}.btn-primary:hover{background:var(--royal-deep);transform:translateY(-2px);box-shadow:0 12px 26px rgba(27,47,128,0.35);}.btn-outline{background:transparent;color:var(--royal);border-color:var(--royal);}.btn-outline:hover{background:var(--royal);color:#fff;transform:translateY(-2px);}.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,0.45);}.btn-ghost:hover{background:rgba(255,255,255,0.14);border-color:#fff;transform:translateY(-2px);}.btn-light{background:#fff;color:var(--royal-deep);}.btn-light:hover{background:#dfe6fb;transform:translateY(-2px);}.link-arrow{font-weight:bold;color:var(--royal-bright);display:inline-flex;align-items:center;gap:6px;}.link-arrow:hover{text-decoration:underline;}header.site-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:transparent;padding-top:0;transition:padding .3s ease;}header.site-nav.scrolled{padding-top:14px;}.nav-inner{max-width:none;width:100%;margin:0;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:76px;background:#fff;border-radius:0;box-shadow:0 2px 14px rgba(6,15,46,0.07);transition:box-shadow .3s ease,height .3s ease,max-width .3s ease,padding .3s ease,border-radius .3s ease;}header.site-nav.scrolled .nav-inner{box-shadow:0 16px 34px rgba(6,15,46,0.16);height:64px;max-width:none;padding:0 20px;border-radius:999px;}.logo{display:flex;align-items:center;gap:12px;font-weight:bold;font-size:18px;color:var(--royal-deep);cursor:pointer;}.logo img{height:52px;width:auto;display:block;}.logo-mark{width:46px;height:46px;border-radius:10px;background:var(--royal-bright);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold;font-size:18px;flex:none;}nav.primary-links{display:flex;align-items:center;gap:6px;}nav.primary-links > a,nav.primary-links > .dropdown > button{padding:10px 14px;font-size:15px;font-weight:bold;color:var(--text);border:none;background:transparent;cursor:pointer;border-radius:6px;transition:color .2s ease,background .2s ease;}nav.primary-links > a:hover,nav.primary-links > .dropdown > button:hover{color:var(--royal);background:var(--bg-soft);}.dropdown{position:relative;}.dropdown > button{display:flex;align-items:center;gap:6px;}.caret{width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px;transition:transform .15s ease;}.dropdown.open .caret{transform:rotate(-135deg);margin-top:3px;}.dropdown-menu{position:absolute;top:calc(100% + 10px);left:0;background:#fff;border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow);min-width:230px;padding:8px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .15s ease,transform .15s ease,visibility .15s ease;}.dropdown.open .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);}.dropdown-menu a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:6px;color:var(--text);}.dropdown-menu a:hover{background:var(--bg-soft);}.dropdown-menu a img{width:26px;height:26px;object-fit:contain;flex:none;}.dropdown-menu a .dd-text{display:flex;flex-direction:column;gap:2px;}.dropdown-menu a strong{font-size:14px;}.dropdown-menu a span{font-size:12.5px;color:var(--muted);font-weight:normal;}.nav-cta{display:flex;align-items:center;gap:14px;}.nav-cta .btn{padding:10px 20px;font-size:14px;}.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}.menu-toggle span{width:24px;height:2px;background:var(--royal-deep);border-radius:2px;}header.site-nav.scrolled .menu-toggle span{background:var(--royal-deep);}.page{display:none;}.page.active{display:block;animation:pageIn .45s ease both;}@keyframes pageIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}.img-placeholder{border-radius:14px;overflow:hidden;border:1px solid var(--border-strong);background:var(--bg-soft-2);line-height:0;}.img-placeholder img{display:block;width:100%;height:auto;}.on-navy .img-placeholder{border-color:rgba(255,255,255,0.22);background:rgba(255,255,255,0.05);}.logo-placeholder{width:100%;height:240px;border-radius:20px;display:flex;align-items:center;justify-content:center;overflow:hidden;}.logo-placeholder img{padding:26px;object-fit:contain;width:100%;height:100%;}.hero{padding:170px 0 100px 0;background:var(--navy);position:relative;overflow:hidden;}.hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:48px;align-items:center;position:relative;z-index:1;}.hero h1{font-size:46px;letter-spacing:-0.01em;color:#fff;}.hero .lead{font-size:18px;max-width:480px;color:var(--on-navy-muted);}.hero-ctas{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;}.hero-visual{position:relative;}.hero-visual-inner{position:relative;animation:floatY 6s ease-in-out infinite;}.stats{background:var(--royal-deep);}.stats .container{padding:44px 28px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}.stat{text-align:center;}.stat .num{font-size:36px;font-weight:bold;color:#fff;}.stat .label{font-size:14px;color:var(--on-navy-muted);margin-top:4px;}.faq-section{background:var(--bg-soft);}.faq-list{display:flex;flex-direction:column;gap:16px;margin-top:32px;max-width:800px;margin-left:auto;margin-right:auto;}.faq-item{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;}.faq-item details{padding:0;}.faq-item summary{padding:20px 24px;font-weight:bold;font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none;user-select:none;}.faq-item summary::-webkit-details-marker{display:none;}.faq-item summary::after{content:'+';font-size:24px;font-weight:normal;color:var(--royal);line-height:1;transition:transform 0.2s;}.faq-item details[open] summary::after{content:'−';transform:rotate(180deg);}.faq-item .faq-answer{padding:0 24px 24px 24px;font-size:15px;color:var(--muted);border-top:1px solid var(--bg-soft);margin-top:10px;padding-top:16px;}.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;}.value-list{display:grid;gap:22px;margin-top:8px;}.value-item{display:flex;gap:14px;align-items:flex-start;}.icon-box{flex:none;width:42px;height:42px;border-radius:8px;background:var(--bg-soft);color:var(--royal);display:flex;align-items:center;justify-content:center;}.icon-box svg{width:20px;height:20px;stroke:var(--royal);}.value-item h4{margin-bottom:4px;font-size:16px;}.value-item p{margin:0;font-size:14.5px;}.presence{background:var(--navy);}.presence-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}.region-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}.region-tag{font-size:13.5px;font-weight:bold;color:#dbe3fa;border:1px solid var(--on-navy-border);border-radius:999px;padding:8px 16px;}.bg-soft{background:var(--bg-soft);}.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;}.service-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 12px 32px rgba(6,15,46,0.06);border:1px solid var(--border);display:flex;flex-direction:column;transition:transform 0.3s ease,box-shadow 0.3s ease;}.service-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(6,15,46,0.12);}.service-img-wrapper{position:relative;height:200px;}.service-img-wrapper img{width:100%;height:100%;object-fit:cover;}.service-img-gradient{position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);}.service-content{padding:0 24px 32px 24px;display:flex;flex-direction:column;flex:1;position:relative;z-index:2;}.service-content h3{margin:0 0 12px 0;font-size:18px;color:var(--text);}.service-content p{margin:0;font-size:14.5px;color:var(--muted);}.products-carousel-wrapper{position:relative;max-width:100vw;overflow:hidden;}.products-carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;}.products-carousel::-webkit-scrollbar{display:none;}.product-section{flex:0 0 100vw;width:100vw;box-sizing:border-box;scroll-snap-align:start;padding:96px 0;display:flex;flex-direction:column;}.product-section > .container{flex:1;display:flex;flex-direction:column;}.product-section.alt{}.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:10;background:#fff;border:1px solid var(--border);border-radius:50%;width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.1);font-size:20px;color:var(--navy);}.carousel-arrow:hover{background:var(--bg-soft);}.carousel-arrow.left{left:24px;}.carousel-arrow.right{right:24px;}.product-grid.two-cards{flex:1;display:grid;grid-template-columns:0.6fr 1.4fr;gap:24px;align-items:stretch;}.product-card{border:1px solid var(--border);box-shadow:0 12px 32px rgba(6,15,46,0.06);border-radius:16px;padding:40px;display:flex;flex-direction:column;background:#fff;}.product-card.left-card{justify-content:space-between;}.product-card.right-card{justify-content:center;}.card-logo-container{margin-top:32px;flex:1;display:flex;align-items:center;justify-content:center;min-height:200px;background:#f8f9fc;border:1px solid var(--border);border-radius:12px;padding:24px;}.card-logo-container img{max-width:80%;max-height:160px;object-fit:contain;}.product-visual-col{display:grid;gap:20px;align-items:stretch;}.product-header-row{display:flex;align-items:center;gap:18px;margin-bottom:8px;}.product-header-row h2{margin:0;}.product-eyebrow-name{font-size:14px;font-weight:bold;color:var(--royal-bright);}.check-list{list-style:none;margin:22px 0;padding:0;display:grid;gap:14px;}.check-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;}.check-list li svg{flex:none;width:20px;height:20px;stroke:var(--royal-bright);margin-top:2px;}.check-list li strong{color:var(--text);}.product-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:42px;align-items:center;}.product-grid.reverse{grid-template-columns:1.05fr 0.95fr;}.product-grid.reverse .product-visual-col{order:2;}.product-cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;}.process-list{display:flex;flex-direction:column;gap:40px;padding-bottom:40px;}.process-step{display:grid;grid-template-columns:52px 1fr;gap:24px;position:sticky;background:#fff;padding:32px 40px;border-radius:16px;box-shadow:0 12px 32px rgba(6,15,46,0.06);border:1px solid var(--border);height:380px;overflow:hidden;}.process-step:nth-child(1){top:100px;z-index:1;}.process-step:nth-child(2){top:120px;z-index:2;}.process-step:nth-child(3){top:140px;z-index:3;}.process-step:nth-child(4){top:160px;z-index:4;}.process-num{width:44px;height:44px;border-radius:50%;background:var(--royal);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:16px;}.process-content{display:flex;flex-direction:column;height:100%;min-height:0;}.process-step h3{font-size:20px;margin-bottom:10px;color:var(--navy);}.process-step p{margin:0 0 32px 0;font-size:15.5px;max-width:600px;line-height:1.6;}.process-image{flex:1;min-height:0;display:flex;gap:16px;}.process-image img{flex:1;width:0;height:100%;object-fit:cover;object-position:center;border-radius:12px;background:var(--bg-soft-2);border:1px solid var(--border);}.contact-section{background:var(--navy);}.contact-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:56px;}.contact-info-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px;}.contact-info-item .icon-box{background:rgba(255,255,255,0.08);}.contact-info-item .icon-box svg{stroke:#cfd8f8;}.contact-info-item h4{font-size:15px;margin-bottom:2px;color:#fff;}.contact-info-item p{margin:0;font-size:15px;color:#dbe3fa;}.contact-info-item p.muted{color:var(--on-navy-muted);font-size:13.5px;}form.contact-form{display:grid;gap:16px;background:rgba(255,255,255,0.04);border:1px solid var(--on-navy-border);border-radius:14px;padding:32px;}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}.field{display:flex;flex-direction:column;gap:6px;}.field label{font-size:13.5px;font-weight:bold;color:#dbe3fa;}.field input,.field textarea{border:1px solid rgba(255,255,255,0.18);border-radius:6px;padding:12px 14px;font-size:15px;font-family:inherit;color:var(--text);background:#fff;transition:border-color .15s ease,box-shadow .15s ease;}.field input:focus,.field textarea:focus{outline:none;border-color:var(--royal-bright);box-shadow:0 0 0 3px rgba(63,95,214,0.28);}.field textarea{resize:vertical;min-height:120px;}.form-note{font-size:13px;color:var(--on-navy-muted);margin-top:-4px;}#formStatus{font-size:14px;font-weight:bold;color:#8fa4ec;display:none;}footer{background:var(--navy);color:#cfd8f2;padding:56px 0 26px 0;border-top:1px solid rgba(255,255,255,0.08);}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,0.12);}footer h4{color:#fff;font-size:14px;margin-bottom:14px;}footer .footer-desc{font-size:14px;color:#aebbe4;max-width:280px;}footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;}footer ul a{font-size:14px;color:#cfd8f2;transition:color .15s ease;}footer ul a:hover{color:#fff;}.footer-bottom{padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:#8fa0d1;}.product-hero{padding:160px 0 80px 0;color:#fff;background:var(--navy);position:relative;overflow:hidden;}.product-hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;}.breadcrumb{font-size:13.5px;color:#a9b8ea;margin-bottom:18px;}.breadcrumb a:hover{text-decoration:underline;}.product-hero h1{font-size:38px;color:#fff;}.product-hero .tagline{font-size:19px;color:#cbd6f7;max-width:520px;}.product-hero .btn-row{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap;}.product-hero .hero-visual-inner{animation:floatY 6s ease-in-out infinite;}.product-hero .hero-visual{position:relative;}.feature-list{display:flex;flex-direction:column;border-top:1px solid var(--border);}.feature-row{display:grid;grid-template-columns:56px 1fr;gap:22px;padding:26px 0;border-bottom:1px solid var(--border);}.feature-row h3{font-size:17px;margin:0 0 4px 0;}.feature-row p{margin:0;font-size:14.5px;}.benefit-row{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}.benefit-item{text-align:left;border-left:3px solid var(--royal-bright);padding-left:18px;}.benefit-item h4{font-size:16px;margin-bottom:6px;}.benefit-item p{margin:0;font-size:14.5px;}.cta-banner{background:var(--royal-deep);color:#fff;border-radius:16px;padding:52px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}.cta-banner h3{margin-bottom:6px;color:#fff;}.cta-banner p{margin:0;color:#cbd6f7;}@media (max-width:960px){nav.primary-links,.nav-cta .btn-outline{display:none;}.menu-toggle{display:flex;}.hero-grid,.about-grid,.contact-grid,.presence-grid,.product-grid,.product-hero-grid{grid-template-columns:1fr;}.product-grid.reverse .product-visual-col{order:0;}.stats .container{grid-template-columns:repeat(2,1fr);}.services-grid{grid-template-columns:repeat(2,1fr);gap:16px;}.feature-row{grid-template-columns:1fr;gap:10px;}.benefit-row{grid-template-columns:1fr;gap:24px;}.form-row{grid-template-columns:1fr;}.footer-grid{grid-template-columns:1fr 1fr;}section{padding:72px 0;}.product-section{padding:64px 0;}.hero{padding-top:150px;}}@media (max-width:960px){body.nav-open nav.primary-links{display:flex;flex-direction:column;align-items:stretch;position:fixed;top:84px;left:16px;right:16px;background:#fff;border:1px solid var(--border);border-radius:14px;padding:12px;gap:2px;box-shadow:var(--shadow);}body.nav-open .dropdown-menu{position:static;box-shadow:none;border:none;opacity:1;visibility:visible;transform:none;display:none;background:transparent;}body.nav-open .dropdown.open .dropdown-menu{display:grid;}}@media (max-width:600px){.hero h1{font-size:32px;}.product-hero h1{font-size:29px;}.footer-grid{grid-template-columns:1fr;}.cta-banner{padding:32px;}.services-grid{grid-template-columns:1fr;}}@media (prefers-reduced-motion:reduce){*{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;}html{scroll-behavior:auto;}}</style>
 </head>
 <body>
 
 <header class="site-nav">
   <div class="nav-inner">
     <div class="logo" data-nav="home">
-      <img src="https://res.cloudinary.com/dyip395mr/image/upload/v1789272290/Screenshot_2026-09-03_at_11.02.50_PM_smbkyx.png" alt="CEEC Global Ventures logo">
+      <img src="https://res.cloudinary.com/dyip395mr/image/upload/f_auto,q_auto/v1789272290/Screenshot_2026-09-03_at_11.02.50_PM_smbkyx.png" alt="CEEC Global Ventures logo" width="150" height="40">
     </div>
 
     <nav class="primary-links">
@@ -371,19 +49,19 @@
         <button type="button" id="productsDropdownBtn">Products <span class="caret"></span></button>
         <div class="dropdown-menu">
           <a data-nav="truetrack">
-            <img src="https://res.cloudinary.com/dyip395mr/image/upload/v1789270049/logo_umhv2z.png" alt="TrueTrack logo">
+            <img src="https://res.cloudinary.com/dyip395mr/image/upload/f_auto,q_auto/v1789270049/logo_umhv2z.png" alt="TrueTrack fleet and asset tracking platform logo" width="200" height="80">
             <span class="dd-text"><strong>TrueTrack</strong><span>Fleet &amp; asset tracking</span></span>
           </a>
           <a data-nav="blogspeed">
-            <img src="https://blogspeed.io/logo-white.png" alt="BlogSpeed logo" style="background:var(--royal-deep);border-radius:6px;padding:3px;">
+            <img src="https://blogspeed.io/logo-white.png" alt="BlogSpeed fast blogging platform logo" width="200" height="80" style="background:var(--royal-deep);border-radius:6px;padding:3px;">
             <span class="dd-text"><strong>BlogSpeed</strong><span>Fast publishing platform</span></span>
           </a>
           <a data-nav="skillpact">
-            <img src="https://res.cloudinary.com/dxrwo0s8o/image/upload/v1750233510/skillpact-logo_igw28i-removebg-preview_suwblu.png" alt="SkillPact logo">
+            <img src="https://res.cloudinary.com/dxrwo0s8o/image/upload/f_auto,q_auto/v1750233510/skillpact-logo_igw28i-removebg-preview_suwblu.png" alt="SkillPact learning and certification platform logo" width="200" height="80">
             <span class="dd-text"><strong>SkillPact</strong><span>Skills &amp; certification</span></span>
           </a>
           <a data-nav="tabzy">
-            <img src="https://res.cloudinary.com/dxrwo0s8o/image/upload/v1749031141/image-removebg-preview_15_g9tvdz.png" alt="Tabzy logo">
+            <img src="https://res.cloudinary.com/dxrwo0s8o/image/upload/f_auto,q_auto/v1749031141/image-removebg-preview_15_g9tvdz.png" alt="Tabzy digital tab and billing platform logo" width="200" height="80">
             <span class="dd-text"><strong>Tabzy</strong><span>Digital tabs &amp; billing</span></span>
           </a>
         </div>
@@ -417,7 +95,7 @@
 
       <div class="hero-visual">
         <div class="hero-visual-inner img-placeholder">
-          <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" alt="Technology workspace" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODV8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" alt="Modern technology workspace and software engineering environment" width="900" height="600" fetchpriority="high">
         </div>
       </div>
     </div>
@@ -435,7 +113,7 @@
   <section id="about" class="">
     <div class="container about-grid">
       <div class="img-placeholder">
-        <img src="https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQyfHx0ZWNobm9sb2d5fGVufDB8fDB8fHww" alt="Team or office photo placeholder" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQyfHx0ZWNobm9sb2d5fGVufDB8fDB8fHww" alt="CEEC Global Ventures engineering team working in office" width="900" height="600" loading="lazy">
       </div>
       <div>
         <span class="eyebrow">Who we are</span>
@@ -473,148 +151,55 @@
     </div>
   </section>
 
-  <section id="services" class="bg-soft">
+  <section id="services" style="background:#fff;">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head center">
         <span class="eyebrow">What we do</span>
         <h2>Services built around your engineering needs</h2>
         <p>Whichever stage you're at — planning, building or running technology — we can plug in where it's most useful.</p>
       </div>
-      <div class="service-list">
-        <div class="service-row">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <h3>Technology consulting</h3>
-          <p>Architecture reviews, technology roadmaps and hands-on guidance for teams making big decisions.</p>
-        </div>
-        <div class="service-row">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-          <h3>Product engineering</h3>
-          <p>End-to-end design and development of web and mobile products, from first prototype to launch.</p>
-        </div>
-        <div class="service-row">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10Z"/></svg></div>
-          <h3>Cloud &amp; infrastructure</h3>
-          <p>Cloud migrations, DevOps pipelines and infrastructure that stays stable as usage grows.</p>
-        </div>
-        <div class="service-row">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-8h3z"/><path d="M3 19a2 2 0 0 0 2 2h1v-8H3z"/></svg></div>
-          <h3>Managed support</h3>
-          <p>Ongoing monitoring, maintenance and support so your systems keep running after launch.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="products">
-    <div class="container section-head center">
-      <span class="eyebrow">Our products</span>
-      <h2>Purpose-built platforms, used by teams worldwide</h2>
-      <p>Four products, four different problems — each built to do one job well.</p>
-    </div>
-
-    <!-- TrueTrack -->
-    <div class="product-section">
-      <div class="container product-grid">
-        <div class="product-visual-col">
-          <div class="img-placeholder logo-placeholder" style="background:#fff; border:2px solid #000; border-radius:8px;">
-            <img src="https://res.cloudinary.com/dyip395mr/image/upload/v1789270049/logo_umhv2z.png" alt="TrueTrack logo" style="width:100%;height:100%;object-fit:contain;padding:14px;">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/images/consulting.webp" alt="Technology consulting and architecture review" width="1194" height="880" loading="lazy">
+            <div class="service-img-gradient"></div>
+          </div>
+          <div class="service-content">
+            <h3>Technology consulting</h3>
+            <p>Architecture reviews, technology roadmaps and hands-on guidance for teams making big decisions.</p>
           </div>
         </div>
-        <div>
-          <div class="product-header-row"><h2>TrueTrack</h2></div>
-          <p class="product-eyebrow-name">truetrack.in</p>
-          <p>TrueTrack is a real-time tracking platform for fleets, field teams and high-value assets. It brings live location, geofencing and route history into one dashboard, so operations teams always know where things stand — without chasing drivers for updates or piecing together spreadsheets after the fact.</p>
-          <p>It's built for teams that manage vehicles or equipment across multiple sites, where a single missed handover or an idle truck can cost real money.</p>
-          <ul class="check-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Live GPS tracking</strong> — every vehicle and asset on a real-time map.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Geofencing &amp; alerts</strong> — instant notice when something enters or exits a zone.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Route history &amp; playback</strong> — replay any trip to review stops and idle time.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Reports &amp; analytics</strong> — utilization and performance reports your team can act on.</div></li>
-          </ul>
-          <div class="product-cta-row">
-            <a href="https://truetrack.in" target="_blank" rel="noopener" class="btn btn-primary">Visit truetrack.in</a>
-            <button class="link-arrow" data-nav="truetrack" style="background:none;border:none;cursor:pointer;font-size:15px;padding:14px 4px;">See the full product page →</button>
+        
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/images/engineering.webp" alt="Product engineering and development" width="1194" height="880" loading="lazy">
+            <div class="service-img-gradient"></div>
+          </div>
+          <div class="service-content">
+            <h3>Product engineering</h3>
+            <p>End-to-end design and development of web and mobile products, from first prototype to launch.</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- BlogSpeed -->
-    <div class="product-section alt">
-      <div class="container product-grid reverse">
-        <div class="product-visual-col">
-          <div class="img-placeholder logo-placeholder" style="background:#000;">
-            <img src="https://blogspeed.io/logo-white.png" alt="BlogSpeed logo" style="width:100%;height:100%;object-fit:contain;padding:20px;">
+        
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/images/cloud.webp" alt="Cloud migrations and DevOps pipelines" width="1194" height="880" loading="lazy">
+            <div class="service-img-gradient"></div>
+          </div>
+          <div class="service-content">
+            <h3>Cloud &amp; infrastructure</h3>
+            <p>Cloud migrations, DevOps pipelines and infrastructure that stays stable as usage grows.</p>
           </div>
         </div>
-        <div>
-          <div class="product-header-row"><h2>BlogSpeed</h2></div>
-          <p class="product-eyebrow-name">blogspeed.io</p>
-          <p>BlogSpeed is a lightweight blogging and content platform built for speed — fast to write in, fast to load, fast to rank. It strips away the bloated editors and slow themes that come with most publishing tools, leaving a platform built purely for getting words onto the web quickly.</p>
-          <p>It suits teams and creators who publish often and don't want performance to be an ongoing project of its own.</p>
-          <ul class="check-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Instant-load pages</strong> — built to load in a fraction of a second, on any connection.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Distraction-free editor</strong> — write and format without fighting the tool.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Built-in SEO</strong> — clean markup and metadata handled automatically.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Team publishing</strong> — roles, drafts and review flows for teams that publish together.</div></li>
-          </ul>
-          <div class="product-cta-row">
-            <a href="https://blogspeed.io" target="_blank" rel="noopener" class="btn btn-primary">Visit blogspeed.io</a>
-            <button class="link-arrow" data-nav="blogspeed" style="background:none;border:none;cursor:pointer;font-size:15px;padding:14px 4px;">See the full product page →</button>
+        
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/images/managed.webp" alt="Managed IT support and monitoring" width="1194" height="880" loading="lazy">
+            <div class="service-img-gradient"></div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SkillPact -->
-    <div class="product-section">
-      <div class="container product-grid">
-        <div class="product-visual-col">
-          <div class="img-placeholder logo-placeholder">
-            <img src="https://res.cloudinary.com/dxrwo0s8o/image/upload/v1750233510/skillpact-logo_igw28i-removebg-preview_suwblu.png" alt="SkillPact logo" style="width:100%;height:100%;object-fit:contain;padding:14px;">
-          </div>
-        </div>
-        <div>
-          <div class="product-header-row"><h2>SkillPact</h2></div>
-          <p class="product-eyebrow-name">skillpact.co.in</p>
-          <p>SkillPact connects learners with industry-aligned courses, assessments and certifications. Course content is shaped with input from hiring teams, so what someone learns maps directly to what actually gets them hired — rather than a generic syllabus that sounds impressive but doesn't match real job requirements.</p>
-          <p>Learners work at their own pace, and employers get a certificate they can trust and verify.</p>
-          <ul class="check-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Industry-mapped courses</strong> — curriculum built around real job requirements.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Skill assessments</strong> — verify what you know, not just what you've watched.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Verified certification</strong> — shareable certificates employers can independently check.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Progress tracking</strong> — one dashboard for learning across every course.</div></li>
-          </ul>
-          <div class="product-cta-row">
-            <a href="https://skillpact.co.in" target="_blank" rel="noopener" class="btn btn-primary">Visit skillpact.co.in</a>
-            <button class="link-arrow" data-nav="skillpact" style="background:none;border:none;cursor:pointer;font-size:15px;padding:14px 4px;">See the full product page →</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tabzy -->
-    <div class="product-section alt">
-      <div class="container product-grid reverse">
-        <div class="product-visual-col">
-          <div class="img-placeholder logo-placeholder">
-            <img src="https://res.cloudinary.com/dxrwo0s8o/image/upload/v1749031141/image-removebg-preview_15_g9tvdz.png" alt="Tabzy logo" style="width:100%;height:100%;object-fit:contain;padding:14px;">
-          </div>
-        </div>
-        <div>
-          <div class="product-header-row"><h2>Tabzy</h2></div>
-          <p class="product-eyebrow-name">tabzy.in</p>
-          <p>Tabzy is a digital tab and billing platform for restaurants, cafés and bars. Guests open a tab with a QR code, order as they go, and settle up — split or whole — without flagging down staff for the check every time.</p>
-          <p>It's built for venues that want faster table turns and fewer billing mistakes, without ripping out the POS system they already use.</p>
-          <ul class="check-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>QR-based ordering</strong> — guests browse the menu and order straight from the table.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Live running tabs</strong> — every order lands on an open tab in real time.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Split &amp; settle</strong> — guests split the bill any way they like and pay from their phones.</div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Staff dashboard</strong> — floor staff see every open tab and order status at a glance.</div></li>
-          </ul>
-          <div class="product-cta-row">
-            <a href="https://tabzy.in" target="_blank" rel="noopener" class="btn btn-primary">Visit tabzy.in</a>
-            <button class="link-arrow" data-nav="tabzy" style="background:none;border:none;cursor:pointer;font-size:15px;padding:14px 4px;">See the full product page →</button>
+          <div class="service-content">
+            <h3>Managed support</h3>
+            <p>Ongoing monitoring, maintenance and support so your systems keep running after launch.</p>
           </div>
         </div>
       </div>
@@ -630,19 +215,242 @@
       <div class="process-list">
         <div class="process-step">
           <div class="process-num">1</div>
-          <div><h3>Discover</h3><p>We start by understanding the problem, not the tech — your constraints, timeline and what success actually looks like.</p></div>
+          <div class="process-content">
+            <h3>Discover</h3>
+            <p>We start by understanding the problem, not the tech — your constraints, timeline and what success actually looks like.</p>
+            <div class="process-image">
+              <img src="assets/images/discover.webp" alt="CEEC Global Ventures software discovery and planning dashboard" width="1024" height="1024" loading="lazy">
+              <img src="assets/images/discover_sketch.webp" alt="Wireframing sketch for software architecture" width="1024" height="1024" loading="lazy">
+              <img src="assets/images/discover_notes.webp" alt="Sticky notes workshop for requirements gathering" width="1024" height="1024" loading="lazy">
+            </div>
+          </div>
         </div>
         <div class="process-step">
           <div class="process-num">2</div>
-          <div><h3>Design</h3><p>Architecture and interface decisions get made deliberately, with trade-offs explained rather than assumed.</p></div>
+          <div class="process-content">
+            <h3>Design</h3>
+            <p>Architecture and interface decisions get made deliberately, with trade-offs explained rather than assumed.</p>
+            <div class="process-image">
+              <img src="assets/images/design.webp" alt="Software design phase interface mockup" width="1024" height="1024" loading="lazy">
+              <img src="assets/images/design_system.webp" alt="Comprehensive design system component library" width="1024" height="1024" loading="lazy">
+              <img src="assets/images/design_colors.webp" alt="Brand color palette UI for digital products" width="1024" height="1024" loading="lazy">
+            </div>
+          </div>
         </div>
         <div class="process-step">
           <div class="process-num">3</div>
-          <div><h3>Build</h3><p>Iterative delivery with regular check-ins, so there are no surprises when something ships.</p></div>
+          <div class="process-content">
+            <h3>Build</h3>
+            <p>Iterative delivery with regular check-ins, so there are no surprises when something ships.</p>
+            <div class="process-image">
+              <img src="assets/images/build.webp" alt="Software engineering build phase code editor" width="1024" height="1024" loading="lazy">
+              <img src="assets/images/build2.webp" alt="Developer coding and programming" width="400" height="267" loading="lazy">
+              <img src="assets/images/build3.webp" alt="Secure codebase and terminal" width="400" height="267" loading="lazy">
+            </div>
+          </div>
         </div>
         <div class="process-step">
           <div class="process-num">4</div>
-          <div><h3>Support</h3><p>Once it's live, our team stays reachable for monitoring, fixes and the next round of improvements.</p></div>
+          <div class="process-content">
+            <h3>Support</h3>
+            <p>Once it's live, our team stays reachable for monitoring, fixes and the next round of improvements.</p>
+            <div class="process-image">
+              <img src="assets/images/support.webp" alt="Managed IT support and monitoring dashboard" width="1024" height="1024" loading="lazy">
+              <img src="assets/images/support2.webp" alt="Server data and metrics" width="400" height="267" loading="lazy">
+              <img src="assets/images/support3.webp" alt="Data analytics and performance tracking" width="400" height="285" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="container section-head center">
+      <span class="eyebrow">Our products</span>
+      <h2>Purpose-built platforms, used by teams worldwide</h2>
+      <p>Four products, four different problems — each built to do one job well.</p>
+    </div>
+
+    <div class="products-carousel-wrapper">
+      <button class="carousel-arrow left" aria-label="Previous" onclick="document.querySelector('.products-carousel').scrollBy({left: -window.innerWidth, behavior: 'smooth'})">←</button>
+      <button class="carousel-arrow right" aria-label="Next" onclick="document.querySelector('.products-carousel').scrollBy({left: window.innerWidth, behavior: 'smooth'})">→</button>
+      <div class="products-carousel">
+
+        <!-- TrueTrack -->
+        <div class="product-section">
+          <div class="container product-grid two-cards">
+            <div class="product-card left-card">
+              <div>
+                <div class="product-header-row"><h2>TrueTrack</h2></div>
+                <p class="product-eyebrow-name">truetrack.in</p>
+                <p>TrueTrack is a real-time tracking platform for fleets, field teams and high-value assets.</p>
+              </div>
+              <div class="card-logo-container">
+                <img src="https://res.cloudinary.com/dyip395mr/image/upload/f_auto,q_auto/v1789270049/logo_umhv2z.png" alt="TrueTrack fleet and asset tracking platform logo" width="200" height="80">
+              </div>
+            </div>
+            <div class="product-card right-card">
+              <p>It brings live location, geofencing and route history into one dashboard, so operations teams always know where things stand — without chasing drivers for updates or piecing together spreadsheets after the fact. It's built for teams that manage vehicles or equipment across multiple sites, where a single missed handover or an idle truck can cost real money.</p>
+              <ul class="check-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Live GPS tracking</strong> — every vehicle and asset on a real-time map.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Geofencing &amp; alerts</strong> — instant notice when something enters or exits a zone.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Route history &amp; playback</strong> — replay any trip to review stops and idle time.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Reports &amp; analytics</strong> — utilization and performance reports your team can act on.</div></li>
+              </ul>
+              <div class="product-cta-row">
+                <a href="https://truetrack.in" target="_blank" rel="noopener" class="btn btn-primary">Visit truetrack.in</a>
+                <button class="link-arrow" data-nav="truetrack" style="background:none;border:none;cursor:pointer;font-size:15px;padding:14px 4px;">See the full product page →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BlogSpeed -->
+        <div class="product-section">
+          <div class="container product-grid two-cards">
+            <div class="product-card left-card">
+              <div>
+                <div class="product-header-row"><h2>BlogSpeed</h2></div>
+                <p class="product-eyebrow-name">blogspeed.io</p>
+                <p>BlogSpeed is a lightweight blogging and content platform built for speed — fast to write in, fast to load, fast to rank.</p>
+              </div>
+              <div class="card-logo-container" style="background:#000;">
+                <img src="https://blogspeed.io/logo-white.png" alt="BlogSpeed fast blogging platform logo" width="200" height="80">
+              </div>
+            </div>
+            <div class="product-card right-card">
+              <p>It strips away the bloated editors and slow themes that come with most publishing tools, leaving a platform built purely for getting words onto the web quickly. It suits teams and creators who publish often and don't want performance to be an ongoing project of its own.</p>
+              <ul class="check-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Instant-load pages</strong> — built to load in a fraction of a second, on any connection.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Distraction-free editor</strong> — write and format without fighting the tool.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Built-in SEO</strong> — clean markup and metadata handled automatically.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Team publishing</strong> — roles, drafts and review flows for teams that publish together.</div></li>
+              </ul>
+              <div class="product-cta-row">
+                <a href="https://blogspeed.io" target="_blank" rel="noopener" class="btn btn-primary">Visit blogspeed.io</a>
+                <button class="link-arrow" data-nav="blogspeed" style="background:none;border:none;cursor:pointer;font-size:15px;padding:14px 4px;">See the full product page →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SkillPact -->
+        <div class="product-section">
+          <div class="container product-grid two-cards">
+            <div class="product-card left-card">
+              <div>
+                <div class="product-header-row"><h2>SkillPact</h2></div>
+                <p class="product-eyebrow-name">skillpact.co.in</p>
+                <p>SkillPact connects learners with industry-aligned courses, assessments and certifications.</p>
+              </div>
+              <div class="card-logo-container">
+                <img src="https://res.cloudinary.com/dxrwo0s8o/image/upload/f_auto,q_auto/v1750233510/skillpact-logo_igw28i-removebg-preview_suwblu.png" alt="SkillPact learning and certification platform logo" width="200" height="80">
+              </div>
+            </div>
+            <div class="product-card right-card">
+              <p>Course content is shaped with input from hiring teams, so what someone learns maps directly to what actually gets them hired — rather than a generic syllabus that sounds impressive but doesn't match real job requirements. Learners work at their own pace, and employers get a certificate they can trust and verify.</p>
+              <ul class="check-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Industry-mapped courses</strong> — curriculum built around real job requirements.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Skill assessments</strong> — verify what you know, not just what you've watched.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Verified certification</strong> — shareable certificates employers can independently check.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Progress tracking</strong> — one dashboard for learning across every course.</div></li>
+              </ul>
+              <div class="product-cta-row">
+                <a href="https://skillpact.co.in" target="_blank" rel="noopener" class="btn btn-primary">Visit skillpact.co.in</a>
+                <button class="link-arrow" data-nav="skillpact" style="background:none;border:none;cursor:pointer;font-size:15px;padding:14px 4px;">See the full product page →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabzy -->
+        <div class="product-section">
+          <div class="container product-grid two-cards">
+            <div class="product-card left-card">
+              <div>
+                <div class="product-header-row"><h2>Tabzy</h2></div>
+                <p class="product-eyebrow-name">tabzy.in</p>
+                <p>Tabzy is a digital tab and billing platform for restaurants, cafés and bars.</p>
+              </div>
+              <div class="card-logo-container">
+                <img src="https://res.cloudinary.com/dxrwo0s8o/image/upload/f_auto,q_auto/v1749031141/image-removebg-preview_15_g9tvdz.png" alt="Tabzy digital tab and billing platform logo" width="200" height="80">
+              </div>
+            </div>
+            <div class="product-card right-card">
+              <p>Guests open a tab with a QR code, order as they go, and settle up — split or whole — without flagging down staff for the check every time. It's built for venues that want faster table turns and fewer billing mistakes, without ripping out the POS system they already use.</p>
+              <ul class="check-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>QR-based ordering</strong> — guests browse the menu and order straight from the table.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Live running tabs</strong> — every order lands on an open tab in real time.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Split &amp; settle</strong> — guests split the bill any way they like and pay from their phones.</div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><div><strong>Staff dashboard</strong> — floor staff see every open tab and order status at a glance.</div></li>
+              </ul>
+              <div class="product-cta-row">
+                <a href="https://tabzy.in" target="_blank" rel="noopener" class="btn btn-primary">Visit tabzy.in</a>
+                <button class="link-arrow" data-nav="tabzy" style="background:none;border:none;cursor:pointer;font-size:15px;padding:14px 4px;">See the full product page →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Learn more about how CEEC Global Ventures partners with businesses worldwide.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <details>
+            <summary itemprop="name">What technology services do you offer?</summary>
+            <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">We offer end-to-end product engineering, cloud &amp; infrastructure migrations, technology consulting, and managed support to keep your systems running smoothly after launch.</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <details>
+            <summary itemprop="name">Do you work with clients globally?</summary>
+            <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Yes, we deliberately design for a global reality. Our clients and users are spread across time zones, primarily in South Asia, the Middle East, Europe, and North America.</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <details>
+            <summary itemprop="name">Are TrueTrack, BlogSpeed, SkillPact, and Tabzy your own products?</summary>
+            <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Yes, alongside our client work, we build and operate our own products. Each one started as a problem we kept seeing our clients face and is now used by teams worldwide.</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <details>
+            <summary itemprop="name">Can you build custom software for my business?</summary>
+            <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Absolutely. Our product engineering team handles the complete design and development of custom web and mobile applications from prototype to launch.</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <details>
+            <summary itemprop="name">How do you approach a new client project?</summary>
+            <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">We start with a Discovery phase to understand your constraints and success metrics. Then, we move deliberately through Design, Build, and Support, ensuring iterative delivery with no surprises.</p>
+            </div>
+          </details>
+        </div>
+        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <details>
+            <summary itemprop="name">Do you provide ongoing support after a project is finished?</summary>
+            <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">Yes, once your product is live, our team stays reachable for proactive monitoring, bug fixes, and continuous feature improvements under our Managed Support service.</p>
+            </div>
+          </details>
         </div>
       </div>
     </div>
@@ -657,7 +465,7 @@
 
         <div class="contact-info-item">
           <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div>
-          <div><h4>Email</h4><p><a href="mailto:contact@ceec.org.in">contact@ceec.org.in</a></p></div>
+          <div><h4>Email</h4><p><a href="mailto:kaushal.g@ceec.org.in">kaushal.g@ceec.org.in</a></p></div>
         </div>
         <div class="contact-info-item">
           <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.99.36 1.96.68 2.89a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.19-1.19a2 2 0 0 1 2.11-.45c.93.32 1.9.55 2.89.68A2 2 0 0 1 22 16.92z"/></svg></div>
@@ -666,6 +474,13 @@
         <div class="contact-info-item">
           <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z"/></svg></div>
           <div><h4>Reach</h4><p class="muted">Working with clients and users across multiple countries and time zones.</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+          <div itemscope itemtype="https://schema.org/PostalAddress">
+            <h4>Address</h4>
+            <p><span itemprop="streetAddress">235, 13th Cross Rd, Indira Nagar</span><br><span itemprop="addressLocality">Bengaluru</span>, <span itemprop="addressRegion">Karnataka</span> <span itemprop="postalCode">560038</span></p>
+          </div>
         </div>
       </div>
 
@@ -688,7 +503,7 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" required placeholder="Tell us a bit about what you need"></textarea>
         </div>
-        <p class="form-note">Submitting opens your email app with this message addressed to contact@ceec.org.in.</p>
+        <p class="form-note">Submitting opens your email app with this message addressed to kaushal.g@ceec.org.in.</p>
         <div>
           <button type="submit" class="btn btn-primary">Send message</button>
           <span id="formStatus"></span>
@@ -714,7 +529,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-visual-inner img-placeholder on-navy">
-          <img src="https://placehold.co/900x600/13224f/ffffff?text=TrueTrack+Dashboard" alt="TrueTrack dashboard screenshot placeholder" loading="lazy">
+          <img src="https://placehold.co/900x600/13224f/ffffff?text=TrueTrack+Dashboard" alt="TrueTrack dashboard screenshot placeholder" width="900" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -790,7 +605,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-visual-inner img-placeholder on-navy">
-          <img src="https://placehold.co/900x600/13224f/ffffff?text=BlogSpeed+Editor" alt="BlogSpeed editor screenshot placeholder" loading="lazy">
+          <img src="https://placehold.co/900x600/13224f/ffffff?text=BlogSpeed+Editor" alt="BlogSpeed editor screenshot placeholder" width="900" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -866,7 +681,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-visual-inner img-placeholder on-navy">
-          <img src="https://placehold.co/900x600/13224f/ffffff?text=SkillPact+Dashboard" alt="SkillPact dashboard screenshot placeholder" loading="lazy">
+          <img src="https://placehold.co/900x600/13224f/ffffff?text=SkillPact+Dashboard" alt="SkillPact dashboard screenshot placeholder" width="900" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -942,7 +757,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-visual-inner img-placeholder on-navy">
-          <img src="https://placehold.co/900x600/13224f/ffffff?text=Tabzy+App" alt="Tabzy app screenshot placeholder" loading="lazy">
+          <img src="https://placehold.co/900x600/13224f/ffffff?text=Tabzy+App" alt="Tabzy app screenshot placeholder" width="900" height="600" loading="lazy">
         </div>
       </div>
     </div>
@@ -1008,7 +823,7 @@
     <div class="footer-grid">
       <div>
         <div class="logo" style="margin-bottom:12px;background:#fff;display:inline-flex;padding:8px 14px;border-radius:10px;">
-          <img src="https://res.cloudinary.com/dyip395mr/image/upload/v1789269963/Screenshot_2025-10-10_at_8.19.32_PM_ntkqnr.png" alt="CEEC Global Ventures logo">
+          <img src="https://res.cloudinary.com/dyip395mr/image/upload/f_auto,q_auto/v1789269963/Screenshot_2025-10-10_at_8.19.32_PM_ntkqnr.png" alt="CEEC Global Ventures logo" width="150" height="40">
         </div>
         <p class="footer-desc">A technology services company designing, building and scaling software for clients — and for our own products, used by teams worldwide.</p>
       </div>
@@ -1033,154 +848,24 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:contact@ceec.org.in">contact@ceec.org.in</a></li>
+          <li><a href="mailto:kaushal.g@ceec.org.in">kaushal.g@ceec.org.in</a></li>
           <li><a href="tel:+917899616501">+91 78996 16501</a></li>
+          <li style="margin-top:12px; line-height:1.4;">235, 13th Cross Rd<br>Indira Nagar, Bengaluru<br>Karnataka 560038</li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
+        <div class="footer-bottom" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px;">
       <span>© <span id="year"></span> CEEC Global Ventures. All rights reserved.</span>
+      <div style="display:flex; gap:16px;">
+        <a href="privacy.html" style="color:inherit; text-decoration:none;">Privacy Policy</a>
+        <a href="terms.html" style="color:inherit; text-decoration:none;">Terms of Service</a>
+      </div>
       <span>Made for a global, technology-first world.</span>
     </div>
   </div>
 </footer>
 
-<script>
-(function(){
-  var pages = ['home','truetrack','blogspeed','skillpact','tabzy'];
-
-  function showPage(name, scrollAnchor){
-    if(pages.indexOf(name) === -1) name = 'home';
-    pages.forEach(function(p){
-      document.getElementById('page-' + p).classList.toggle('active', p === name);
-    });
-    history.replaceState(null, '', name === 'home' ? '#' : '#' + name);
-    document.body.classList.remove('nav-open');
-    closeDropdown();
-
-    if(scrollAnchor){
-      requestAnimationFrame(function(){
-        var el = document.getElementById(scrollAnchor);
-        if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
-      });
-    } else {
-      window.scrollTo(0,0);
-    }
-    updateNavScroll();
-  }
-
-  document.addEventListener('click', function(e){
-    var navEl = e.target.closest('[data-nav]');
-    if(navEl){
-      e.preventDefault();
-      var target = navEl.getAttribute('data-nav');
-      var anchor = navEl.getAttribute('data-anchor');
-      showPage(target, anchor);
-      return;
-    }
-    var anchorEl = e.target.closest('[data-anchor]');
-    if(anchorEl && !anchorEl.hasAttribute('data-nav')){
-      var currentActive = document.querySelector('.page.active').id;
-      if(currentActive !== 'page-home'){
-        e.preventDefault();
-        showPage('home', anchorEl.getAttribute('data-anchor'));
-      }
-    }
-  });
-
-  // Dropdown
-  var dropdown = document.getElementById('productsDropdown');
-  var dropdownBtn = document.getElementById('productsDropdownBtn');
-  function closeDropdown(){ dropdown.classList.remove('open'); }
-  dropdownBtn.addEventListener('click', function(e){
-    e.stopPropagation();
-    dropdown.classList.toggle('open');
-  });
-  document.addEventListener('click', function(e){
-    if(!dropdown.contains(e.target)) closeDropdown();
-  });
-
-  // Mobile menu
-  var menuToggle = document.getElementById('menuToggle');
-  menuToggle.addEventListener('click', function(){
-    document.body.classList.toggle('nav-open');
-  });
-
-  // Floating navbar: white + shadow once scrolled
-  var siteNav = document.querySelector('header.site-nav');
-  function updateNavScroll(){
-    if(window.scrollY > 24){ siteNav.classList.add('scrolled'); }
-    else{ siteNav.classList.remove('scrolled'); }
-  }
-  window.addEventListener('scroll', updateNavScroll, {passive:true});
-  updateNavScroll();
-
-  // Stat counters
-  var counted = false;
-  function animateCounters(){
-    if(counted) return;
-    counted = true;
-    document.querySelectorAll('.stat .num[data-count]').forEach(function(el){
-      var target = parseInt(el.getAttribute('data-count'), 10);
-      var suffix = el.getAttribute('data-suffix') || '';
-      var duration = 1100;
-      var startTime = null;
-      function step(ts){
-        if(!startTime) startTime = ts;
-        var progress = Math.min((ts - startTime) / duration, 1);
-        var value = Math.floor(progress * target);
-        el.textContent = value + suffix;
-        if(progress < 1) requestAnimationFrame(step);
-        else el.textContent = target + suffix;
-      }
-      requestAnimationFrame(step);
-    });
-    document.querySelectorAll('.stat .num[data-static]').forEach(function(el){
-      el.textContent = el.getAttribute('data-static');
-    });
-  }
-  var statsSection = document.querySelector('.stats');
-  if(statsSection){
-    var statsObserver = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){ if(entry.isIntersecting) animateCounters(); });
-    }, {threshold:0.4});
-    statsObserver.observe(statsSection);
-  }
-
-  // Contact form -> mailto
-  var form = document.getElementById('contactForm');
-  var status = document.getElementById('formStatus');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var company = document.getElementById('company').value.trim();
-    var message = document.getElementById('message').value.trim();
-
-    var subject = encodeURIComponent('Website enquiry from ' + name);
-    var bodyLines = [
-      'Name: ' + name,
-      'Email: ' + email,
-      company ? 'Company: ' + company : null,
-      '',
-      message
-    ].filter(Boolean);
-    var body = encodeURIComponent(bodyLines.join('\n'));
-
-    window.location.href = 'mailto:contact@ceec.org.in?subject=' + subject + '&body=' + body;
-
-    status.style.display = 'inline';
-    status.textContent = 'Opening your email app…';
-    setTimeout(function(){ status.style.display = 'none'; }, 4000);
-  });
-
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Init from hash
-  var initial = (location.hash || '').replace('#','');
-  showPage(pages.indexOf(initial) !== -1 ? initial : 'home');
-})();
-</script>
+<script>(function(){ var pages = ['home','truetrack','blogspeed','skillpact','tabzy']; function showPage(name, scrollAnchor){ if(pages.indexOf(name) === -1) name = 'home'; pages.forEach(function(p){ document.getElementById('page-' + p).classList.toggle('active', p === name); }); history.replaceState(null, '', name === 'home' ? '#' : '#' + name); document.body.classList.remove('nav-open'); closeDropdown(); if(scrollAnchor){ requestAnimationFrame(function(){ var el = document.getElementById(scrollAnchor); if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); } }); } else { window.scrollTo(0,0); } updateNavScroll(); } document.addEventListener('click', function(e){ var navEl = e.target.closest('[data-nav]'); if(navEl){ e.preventDefault(); var target = navEl.getAttribute('data-nav'); var anchor = navEl.getAttribute('data-anchor'); showPage(target, anchor); return; } var anchorEl = e.target.closest('[data-anchor]'); if(anchorEl && !anchorEl.hasAttribute('data-nav')){ var currentActive = document.querySelector('.page.active').id; if(currentActive !== 'page-home'){ e.preventDefault(); showPage('home', anchorEl.getAttribute('data-anchor')); } } }); var dropdown = document.getElementById('productsDropdown'); var dropdownBtn = document.getElementById('productsDropdownBtn'); function closeDropdown(){ dropdown.classList.remove('open'); } dropdownBtn.addEventListener('click', function(e){ e.stopPropagation(); dropdown.classList.toggle('open'); }); document.addEventListener('click', function(e){ if(!dropdown.contains(e.target)) closeDropdown(); }); var menuToggle = document.getElementById('menuToggle'); menuToggle.addEventListener('click', function(){ document.body.classList.toggle('nav-open'); }); var siteNav = document.querySelector('header.site-nav'); function updateNavScroll(){ if(window.scrollY > 24){ siteNav.classList.add('scrolled'); } else{ siteNav.classList.remove('scrolled'); } } window.addEventListener('scroll', updateNavScroll, {passive:true}); updateNavScroll(); var counted = false; function animateCounters(){ if(counted) return; counted = true; document.querySelectorAll('.stat .num[data-count]').forEach(function(el){ var target = parseInt(el.getAttribute('data-count'), 10); var suffix = el.getAttribute('data-suffix') || ''; var duration = 1100; var startTime = null; function step(ts){ if(!startTime) startTime = ts; var progress = Math.min((ts - startTime) / duration, 1); var value = Math.floor(progress * target); el.textContent = value + suffix; if(progress < 1) requestAnimationFrame(step); else el.textContent = target + suffix; } requestAnimationFrame(step); }); document.querySelectorAll('.stat .num[data-static]').forEach(function(el){ el.textContent = el.getAttribute('data-static'); }); } var statsSection = document.querySelector('.stats'); if(statsSection){ var statsObserver = new IntersectionObserver(function(entries){ entries.forEach(function(entry){ if(entry.isIntersecting) animateCounters(); }); }, {threshold:0.4}); statsObserver.observe(statsSection); } var form = document.getElementById('contactForm'); var status = document.getElementById('formStatus'); form.addEventListener('submit', function(e){ e.preventDefault(); var name = document.getElementById('name').value.trim(); var email = document.getElementById('email').value.trim(); var company = document.getElementById('company').value.trim(); var message = document.getElementById('message').value.trim(); var subject = encodeURIComponent('Website enquiry from ' + name); var bodyLines = [ 'Name: ' + name, 'Email: ' + email, company ? 'Company: ' + company : null, '', message ].filter(Boolean); var body = encodeURIComponent(bodyLines.join('\n')); window.location.href = 'mailto:kaushal.g@ceec.org.in?subject=' + subject + '&body=' + body; status.style.display = 'inline'; status.textContent = 'Opening your email app…'; setTimeout(function(){ status.style.display = 'none'; }, 4000); }); document.getElementById('year').textContent = new Date().getFullYear(); var initial = (location.hash || '').replace('#',''); showPage(pages.indexOf(initial) !== -1 ? initial : 'home'); })();</script>
 
 </body>
 </html>
